@@ -10,11 +10,8 @@ help clean:
 	$(MAKE) -C pelican $@
 
 github:	publish
-	@echo "FIXME: todo"
-	# include pelican/Makefile
-	# ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	# git push origin $(GITHUB_PAGES_BRANCH)
-	exit 1
+	ghp-import -m "Generate Pelican site" pelican/output
+	git push origin gh-pages
 
 devserver:	_build
 	fig up pelican
