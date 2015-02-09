@@ -1,7 +1,7 @@
 Title: Docker
 Date: 2015-02-09 12:00
 Category: App
-Tags: official, arm, app, docker, virtualization, containers
+Tags: official, arm, app, docker, ubuntu, virtualization, containers
 
 Official Docker image
 
