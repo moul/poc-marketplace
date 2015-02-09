@@ -1,0 +1,4 @@
+cache/
+output/
+pelican.pid
+srv.pid
