@@ -5,3 +5,4 @@ pelican:
   ports:
   - 8000:8000
   command: /bin/bash -xc 'make clean publish devserver; tail -n 0 -f /var/log/lastlog'
+  working_dir: /pelican
