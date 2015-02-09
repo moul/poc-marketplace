@@ -2,3 +2,6 @@ pelican:
   build: .
   volumes:
   - pelican:/pelican
+  ports:
+  - 8000:8000
+  command: /bin/bash -xc 'make devserver; tail -n 0 -f /var/log/*'
