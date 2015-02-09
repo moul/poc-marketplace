@@ -1,0 +1,4 @@
+pelican:
+  build: .
+  volumes:
+  - pelican:/pelican
