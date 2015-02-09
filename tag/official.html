@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Marketplace - official</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Marketplace Atom Feed" />
+	<meta charset="utf-8">
+	<title>Marketplace</title>
+	<meta name="description" content="">
+	<meta name="author" content="Online Labs">
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="/theme/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link href="/theme/bootstrap.min.css" rel="stylesheet">
+	<link href="/theme/local.css" rel="stylesheet">
+	<link href="/theme/pygments.css" rel="stylesheet">
+
+	<!-- Feeds -->
+	<link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Marketplace Atom Feed" />
+
+
+
+
 </head>
+<body>
+	<div class="topbar">
+	  <div class="topbar-inner">
+		<div class="container-fluid">
+		  <a class="brand" href="/">Marketplace</a>
+			<ul class="nav">
+					<li ><a href="/category/app.html">App</a></li>
+					<li ><a href="/category/official.html">Official</a></li>
+			</ul>
+			<p class="pull-right"><a href="/archives.html">[archives]</a> <a href="/tags.html">[tags]</a></p>
+		</div>
+	  </div>
+	</div>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Marketplace </a></h1>
-                <nav><ul>
-                    <li><a href="/category/app.html">App</a></li>
-                    <li><a href="/category/official.html">Official</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/archlinux-rolling.html">Archlinux Rolling</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/official.html">Official</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/archlinux.html">archlinux</a> <a href="/tag/systemd.html">systemd</a> </p>
-</footer><!-- /.post-info --><p>Official Archlinux Rolling image</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/debian-wheezy.html" rel="bookmark"
-                           title="Permalink to Debian Wheezy">Debian Wheezy</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/official.html">Official</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/debian.html">debian</a> <a href="/tag/sysv-init.html">sysv-init</a> <a href="/tag/aptitude.html">aptitude</a> </p>
-</footer><!-- /.post-info -->                <p>Official Debian Wheezy image</p>
-                <a class="readmore" href="/debian-wheezy.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/docker.html" rel="bookmark"
-                           title="Permalink to Docker">Docker</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/app.html">App</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/docker.html">docker</a> <a href="/tag/virtualization.html">virtualization</a> <a href="/tag/containers.html">containers</a> </p>
-</footer><!-- /.post-info -->                <p>Official Docker image</p>
+	<div class="container-fluid">
+	  <div class="sidebar">
+		<div class="well">
+			<h3>Blogroll</h3>
+			<ul>
+				<li><a href="http://getpelican.com/">Pelican</a></li>
+				<li><a href="http://python.org/">Python.org</a></li>
+				<li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+				<li><a href="#">You can modify those links in your config file</a></li>
+			</ul>
+			<div class="social">
+			<h3>Social</h3>
+			<ul>
+				<li><a href="#">You can add links in your config file</a></li>
+				<li><a href="#">Another social link</a></li>
+			</ul>
+			</div>
+		</div>
+	  </div>
+	  <div class="content">
+<div class="page-header"><h1>Marketplace <small>official</small></h1></div>
+<div class='article'>
+	<h2>Archlinux Rolling</h2>
+	<div class="well small">Permalink: <a class="more" href="/archlinux-rolling.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/official.html">Official</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/archlinux.html">archlinux</a> <a href="/tag/systemd.html">systemd</a> </div>
+	<div class="summary"><p>Official Archlinux Rolling image</p> <a class="btn primary xsmall" href="/archlinux-rolling.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Debian Wheezy</h2>
+	<div class="well small">Permalink: <a class="more" href="/debian-wheezy.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs <opensource@ocs.online.net> </a>
+ in <a href="/category/official.html">Official</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/debian.html">debian</a> <a href="/tag/sysv-init.html">sysv-init</a> <a href="/tag/aptitude.html">aptitude</a> </div>
+	<div class="summary"><p>Official Debian Wheezy image</p> <a class="btn primary xsmall" href="/debian-wheezy.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Docker</h2>
+	<div class="well small">Permalink: <a class="more" href="/docker.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/app.html">App</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/docker.html">docker</a> <a href="/tag/virtualization.html">virtualization</a> <a href="/tag/containers.html">containers</a> </div>
+	<div class="summary"><p>Official Docker image</p>
 <h2>Contains</h2>
 <ul>
 <li>docker 1.3.2</li>
@@ -87,175 +90,71 @@
 <li>gosu</li>
 <li>nsenter</li>
 <li>pipework</li>
-</ul>
-                <a class="readmore" href="/docker.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+</ul> <a class="btn primary xsmall" href="/docker.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Fedora</h2>
+	<div class="well small">Permalink: <a class="more" href="/fedora.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/official.html">Official</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/fedora.html">fedora</a> <a href="/tag/systemd.html">systemd</a> </div>
+	<div class="summary"><p>Official Fedora image</p> <a class="btn primary xsmall" href="/fedora.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Owncloud</h2>
+	<div class="well small">Permalink: <a class="more" href="/owncloud.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/app.html">App</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/saas.html">saas</a> <a href="/tag/owncloud.html">owncloud</a> <a href="/tag/php.html">php</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/storage.html">storage</a> <a href="/tag/s3.html">s3</a> </div>
+	<div class="summary"><p>Official Owncloud image</p> <a class="btn primary xsmall" href="/owncloud.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Pydio</h2>
+	<div class="well small">Permalink: <a class="more" href="/pydio.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/app.html">App</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/saas.html">saas</a> <a href="/tag/pydio.html">pydio</a> <a href="/tag/php.html">php</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/storage.html">storage</a> <a href="/tag/s3.html">s3</a> </div>
+	<div class="summary"><p>Official Pydio image</p> <a class="btn primary xsmall" href="/pydio.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Ubuntu Trusty</h2>
+	<div class="well small">Permalink: <a class="more" href="/ubuntu-trusty.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/official.html">Official</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/debian.html">debian</a> <a href="/tag/upstart.html">upstart</a> <a href="/tag/aptitude.html">aptitude</a> </div>
+	<div class="summary"><p>Official Ubuntu Trusty image</p> <a class="btn primary xsmall" href="/ubuntu-trusty.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Ubuntu Utopic</h2>
+	<div class="well small">Permalink: <a class="more" href="/ubuntu-utopic.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/official.html">Official</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/debian.html">debian</a> <a href="/tag/upstart.html">upstart</a> <a href="/tag/aptitude.html">aptitude</a> </div>
+	<div class="summary"><p>Official Ubuntu Utopic image</p> <a class="btn primary xsmall" href="/ubuntu-utopic.html">more…</a>
+	</div>
+</div>	
+<div class='article'>
+	<h2>Wordpress</h2>
+	<div class="well small">Permalink: <a class="more" href="/wordpress.html">2015-02-09 12:00:00+01:00</a>
+by <a class="url fn" href="/author/online-labs.html">Online Labs </a>
+ in <a href="/category/app.html">App</a>
+tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/saas.html">saas</a> <a href="/tag/wordpress.html">wordpress</a> <a href="/tag/php.html">php</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/blogging.html">blogging</a> </div>
+	<div class="summary"><p>Official Wordpress image</p> <a class="btn primary xsmall" href="/wordpress.html">more…</a>
+	</div>
+</div>	
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/fedora.html" rel="bookmark"
-                           title="Permalink to Fedora">Fedora</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
+		<footer>
+		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
+		  <p>&copy; Online Labs</p>
+		</footer>
+	  </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/official.html">Official</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/fedora.html">fedora</a> <a href="/tag/systemd.html">systemd</a> </p>
-</footer><!-- /.post-info -->                <p>Official Fedora image</p>
-                <a class="readmore" href="/fedora.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/owncloud.html" rel="bookmark"
-                           title="Permalink to Owncloud">Owncloud</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/app.html">App</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/saas.html">saas</a> <a href="/tag/owncloud.html">owncloud</a> <a href="/tag/php.html">php</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/storage.html">storage</a> <a href="/tag/s3.html">s3</a> </p>
-</footer><!-- /.post-info -->                <p>Official Owncloud image</p>
-                <a class="readmore" href="/owncloud.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/pydio.html" rel="bookmark"
-                           title="Permalink to Pydio">Pydio</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/app.html">App</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/saas.html">saas</a> <a href="/tag/pydio.html">pydio</a> <a href="/tag/php.html">php</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/storage.html">storage</a> <a href="/tag/s3.html">s3</a> </p>
-</footer><!-- /.post-info -->                <p>Official Pydio image</p>
-                <a class="readmore" href="/pydio.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/ubuntu-trusty.html" rel="bookmark"
-                           title="Permalink to Ubuntu Trusty">Ubuntu Trusty</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/official.html">Official</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/debian.html">debian</a> <a href="/tag/upstart.html">upstart</a> <a href="/tag/aptitude.html">aptitude</a> </p>
-</footer><!-- /.post-info -->                <p>Official Ubuntu Trusty image</p>
-                <a class="readmore" href="/ubuntu-trusty.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/ubuntu-utopic.html" rel="bookmark"
-                           title="Permalink to Ubuntu Utopic">Ubuntu Utopic</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/official.html">Official</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/distrib.html">distrib</a> <a href="/tag/debian.html">debian</a> <a href="/tag/upstart.html">upstart</a> <a href="/tag/aptitude.html">aptitude</a> </p>
-</footer><!-- /.post-info -->                <p>Official Ubuntu Utopic image</p>
-                <a class="readmore" href="/ubuntu-utopic.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/wordpress.html" rel="bookmark"
-                           title="Permalink to Wordpress">Wordpress</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-02-09T12:00:00+01:00">
-                Published: Mon 09 February 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/online-labs.html">Online Labs</a>
-        </address>
-<p>In <a href="/category/app.html">App</a>. </p>
-<p>tags: <a href="/tag/official.html">official</a> <a href="/tag/arm.html">arm</a> <a href="/tag/app.html">app</a> <a href="/tag/saas.html">saas</a> <a href="/tag/wordpress.html">wordpress</a> <a href="/tag/php.html">php</a> <a href="/tag/mysql.html">mysql</a> <a href="/tag/blogging.html">blogging</a> </p>
-</footer><!-- /.post-info -->                <p>Official Wordpress image</p>
-                <a class="readmore" href="/wordpress.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
+	</div>
 </body>
 </html>
