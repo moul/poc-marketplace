@@ -19,4 +19,7 @@ github:	publish
 devserver:	_build
 	fig up pelican
 
+shell:	_build
+	fig run pelican /bin/bash
+
 .PHONY: help html clean regenerate serve devserver publish github
