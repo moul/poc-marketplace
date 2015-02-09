@@ -1,6 +1,6 @@
 PY?=python
 PELICAN?=pelican
-PELICANOPTS=
+PELICANOPTS=-t theme
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
@@ -54,23 +54,26 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
-html:
+install_theme:
+	pelican-themes -s $(PWD)/theme
+
+html: install_theme
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
-regenerate:
+regenerate: install_theme
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-serve:
+serve: install_theme
 ifdef PORT
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
 else
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
 endif
 
-devserver:
+devserver: install_theme
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
 else
@@ -82,7 +85,7 @@ stopserver:
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-publish:
+publish: install_theme
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 ssh_upload: publish
