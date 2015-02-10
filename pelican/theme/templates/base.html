@@ -55,18 +55,34 @@
       </div>
     </div>
 
-    <div class="content">
-      {% block indextitle %}
-      <div class="container">
-        <div class="row">
-          <div class="page-header">
-            <h1>{% block title %} {{ self.windowtitle() }} {% endblock %}</h1>
-          </div>
+    {% block indextitle %}
+    <div class="container">
+      <div class="row">
+        <div class="page-header">
+          <h1>{% block title %}{{ self.windowtitle() }}{% endblock %}</h1>
         </div>
       </div>
-      {% endblock %}
-      {% block content %}{% endblock %}
     </div>
+    {% endblock %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          {% block content %}{% endblock %}
+        </div>
+        <div class="col-md-3">
+          {% block sidebar %}
+          <div class="well text-center">
+            <p>Tags</p>
+            {% for tag, articles in tags %}
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-info btn-xs">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="row">
         <footer>

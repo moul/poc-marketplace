@@ -2,10 +2,10 @@
 {% block content %}
 
 {% if articles %}
-<div class="container">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row-fluid">
     {% for article in articles %}
-    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
       <div class="thumbnail text-center">
         <a href="{{ SITEURL }}/{{article.url}}">
           <h3>{{article.title}}</h3>
@@ -20,26 +20,32 @@
     </div>
     {% endfor %}
   </div>
-  {% endif %}
+</div>
+{% endif %}
 
-  {% if articles_page and articles_paginator.num_pages > 1 %}
-  <div class="pagination">
-    <ul>
-      {% if articles_page.has_previous() %}
-      {% set num = articles_page.previous_page_number() %}
-      <li class="prev"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">&larr; Previous</a></li>
-      {% else %}
-      <li class="prev disabled"><a href="#">&larr; Previous</a></li>
-      {% endif %}
-      {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
-      <li class="{{ 'active' if num == articles_page.number else '' }}"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a></li>
-      {% endfor %}
-      {% if articles_page.has_next() %}
-      <li class="next"><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &rarr;</a></li>
-      {% else %}
-      <li class="next disabled"><a href="#">&rarr; Next</a></li>
-      {% endif %}
-    </ul>
+{% if articles_page and articles_paginator.num_pages > 1 %}
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <div class="pagination">
+        <ul>
+          {% if articles_page.has_previous() %}
+          {% set num = articles_page.previous_page_number() %}
+          <li class="prev"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">&larr; Previous</a></li>
+          {% else %}
+          <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+          {% endif %}
+          {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
+          <li class="{{ 'active' if num == articles_page.number else '' }}"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a></li>
+          {% endfor %}
+          {% if articles_page.has_next() %}
+          <li class="next"><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &rarr;</a></li>
+          {% else %}
+          <li class="next disabled"><a href="#">&rarr; Next</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 {% endif %}

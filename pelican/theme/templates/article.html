@@ -1,64 +1,60 @@
 {% extends "base.html" %}
 
-{% block indextitle %}{% endblock %}
+{% block title %}{{ article.title }}{% if article.version %} <small>{{article.version}}</small>{% endif %}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="article">
-      <div class="page-header">
-        <h1>{{ article.title }}{% if article.version %} <small>{{article.version}}</small>{% endif %}</h1>
-      </div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div>{{ article.content }}</div>
+  </div>
+  <div class="row-fluid">
+    <div class="well col-md-6 col-md-offset-3">
+      <a href="https://cloud.online.net/#/servers/new?image={{ article.uuid }}" class="btn btn-primary btn-block btn-lg" target="_blank">Create server</a>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8">
-      <div>{{ article.content }}</div>
-      <div>
-        <a href="https://cloud.online.net/#/servers/new?image={{ article.uuid }}" class="btn btn-primary" target="_blank">Create server</a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="text-center">
-        <img src="{% if article.icon %}{{ article.icon }}{% else %}https://cloud.online.net/images/69f046ad.image_default.jpg{% endif %}" class="img-rounded" />
-      </div>
-      <dl class="dl-horizontal">
-        <dt>Author</dt>
-        <dd><a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }} <img src="{{article.author_gravatar}}?s=20" /></a></dd>
+</div>
+{% endblock %}
 
-        <dt>Category</dt>
-        <dd><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></dd>
+{% block sidebar %}
+<div class="text-center well">
+  <img src="{% if article.icon %}{{ article.icon }}{% else %}https://cloud.online.net/images/69f046ad.image_default.jpg{% endif %}" class="img-rounded" />
 
-        <dt>Tags</dt>
-        <dd>{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-xs btn-info">{{ tag }}</a> {% endfor %}</dd>
+  <hr />
 
-        {% if article.vendor_url %}
-        <dt>Vendor</dt>
-        <dd><a href="{{article.vendor_url}}" target="_blank" class="social">{% if article.vendor_name %}{{article.vendor_name}}{% else %}{{article.vendor_url}}{% endif %}</a></dd>
-        {% endif %}
+  <dl class="dl">
+    <dt>Author</dt>
+    <dd><a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }} <img src="{{article.author_gravatar}}?s=20" /></a></dd>
 
-        {% if article.github_url %}
-        <dt>Sources</dt>
-        <dd><a href="{{article.github_url}}" target="_blank" class="social">View sources</a></dd>
-        {% endif %}
+    <dt>Category</dt>
+    <dd><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></dd>
 
-        {% if article.issues_url %}
-        <dt>Issues</dt>
-        <dd><a href="{{article.issues_url}}" target="_blank" class="social">Report an issue</a></dd>
-        {% endif %}
+    <dt>Tags</dt>
+    <dd>{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-xs btn-info">{{ tag }}</a> {% endfor %}</dd>
 
-        {% if article.help_url %}
-        <dt>Documentation</dt>
-        <dd><a href="{{article.help_url}}" target="_blank" class="social">Documentation</a></dd>
-        {% endif %}
+    {% if article.vendor_url %}
+    <dt>Vendor</dt>
+    <dd><a href="{{article.vendor_url}}" target="_blank" class="social">{% if article.vendor_name %}{{article.vendor_name}}{% else %}{{article.vendor_url}}{% endif %}</a></dd>
+    {% endif %}
 
-        {% if article.community_url %}
-        <dt>Community discussion</dt>
-        <dd><a href="{{article.community_url}}" target="_blank" class="social">{% if article.community_title %}{{article.community_title}}{% else %}{{ article.title }}{% endif %}</a></dd>
-        {% endif %}
-      </dl>
+    {% if article.github_url %}
+    <dt>Sources</dt>
+    <dd><a href="{{article.github_url}}" target="_blank" class="social">View sources</a></dd>
+    {% endif %}
 
-    </div>
-  </div>
+    {% if article.issues_url %}
+    <dt>Issues</dt>
+    <dd><a href="{{article.issues_url}}" target="_blank" class="social">Report an issue</a></dd>
+    {% endif %}
+
+    {% if article.help_url %}
+    <dt>Documentation</dt>
+    <dd><a href="{{article.help_url}}" target="_blank" class="social">Documentation</a></dd>
+    {% endif %}
+
+    {% if article.community_url %}
+    <dt>Community discussion</dt>
+    <dd><a href="{{article.community_url}}" target="_blank" class="social">{% if article.community_title %}{{article.community_title}}{% else %}{{ article.title }}{% endif %}</a></dd>
+    {% endif %}
+  </dl>
 </div>
 {% endblock %}
