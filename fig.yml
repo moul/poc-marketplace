@@ -1,5 +1,5 @@
 pelican:
-  build: .
+  image: moul/pelican
   volumes:
   - pelican:/pelican
   ports:
