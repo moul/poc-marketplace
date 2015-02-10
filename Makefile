@@ -3,7 +3,7 @@ all:	devserver
 _build:
 	fig build
 
-html regenerate serve publish github:	_build
+html regenerate serve publish:	_build
 	fig run pelican make $@
 
 help clean:
