@@ -2,15 +2,23 @@
 {% block content %}
 
 {% if articles %}
-{% for article in (articles_page.object_list if articles_page else articles) %}
-<div class='article'>
-	<h2>{{ article.title }}</h2>
-	<div class="well small">{% include "metadata.html" %}</div>
-	<div class="summary">{{ article.summary }} <a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">more…</a>
-	</div>
-</div>	
-{% endfor %}
-{%endif%}
+<div class="row">
+  {% for article in articles %}
+  <div class="span4">
+    <div class="thumbnail">
+      <a href="{{article.url}}">
+        <h3>{{article.title}}</h3>
+        <img src="{{article.icon}}" style="border: 1px solid black"/>
+      </a>
+      <div>
+        <a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">info…</a>
+        <a href="https://cloud.online.net/#/servers/new?image={{ article.uuid }}" class="btn success xsmall" target="_blank">Create server</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
 
 {% if articles_page and articles_paginator.num_pages > 1 %}
 <div class="pagination">
