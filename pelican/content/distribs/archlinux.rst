@@ -4,7 +4,7 @@ Arch Linux
 :version: Rolling
 :date: 2015-02-09 12:00
 :category: Distrib
-:tags: official, arm, distrib, archlinux, systemd
+:tags: official, arm, distrib, archlinux, systemd, beta
 :uuid:
 :author: Online Labs
 :email: opensource@ocs.online.net
@@ -15,6 +15,7 @@ Arch Linux
 :help_url:
 :vendor_url:
 :vendor_name: Arch Linux
+:summary: Arch Linux ARMhf image
 
 
 Official Arch Linux image

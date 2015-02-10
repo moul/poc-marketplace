@@ -15,14 +15,17 @@ moul's Devbox
 :help_url:
 :vendor_url:
 :vendor_name:
+:summary: An image with development tools
 
-An image based on the official Docker image with some development tools
+Based on the official Docker image
 
-Contains:
----------
+----
 
-- Dependencies: build-essential
-- Version control: git
-- S3 client: s3cmd
-- Kernel dependencies: u-boot-tools, ncurses
-- Editor: emacs
+Contains
+********
+
+- **Dependencies**: build-essential
+- **Version control**: git
+- **S3 client**: s3cmd
+- **Kernel dependencies**: u-boot-tools, ncurses
+- **Editor**: emacs

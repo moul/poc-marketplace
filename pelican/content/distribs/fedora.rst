@@ -15,6 +15,7 @@ Fedora
 :help_url:
 :vendor_url:
 :vendor_name: Fedora
+:summary: Fedora ARMhf image
 
 
 Official Fedora image

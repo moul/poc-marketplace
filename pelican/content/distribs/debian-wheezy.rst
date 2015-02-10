@@ -16,6 +16,7 @@ Debian Wheezy
 :help_url: https://www.debian.org/doc/
 :vendor_url: https://www.debian.org
 :vendor_name: Debian
+:summary: Debian ARMhf image
 
 
 Official Debian Wheezy image

@@ -15,6 +15,6 @@ Ubuntu Utopic
 :help_url:
 :vendor_url:
 :vendor_name: Ubuntu
-
+:summary: Ubuntu ARMhf image
 
 Official Ubuntu Utopic image

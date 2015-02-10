@@ -15,6 +15,7 @@ Ubuntu Trusty
 :help_url:
 :vendor_url:
 :vendor_name: Ubuntu
+:summary: Ubuntu ARMhf image
 
 
 Official Ubuntu Trusty image
