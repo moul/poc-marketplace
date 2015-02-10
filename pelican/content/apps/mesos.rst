@@ -15,6 +15,7 @@ Mesos
 :help_url:
 :vendor_url:
 :vendor_name: Mesos
+:summary: Mesos ARMhf image
 :status: draft
 
 Official Mesos image

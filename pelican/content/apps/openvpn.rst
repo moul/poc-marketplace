@@ -15,6 +15,7 @@ OpenVPN
 :help_url:
 :vendor_url:
 :vendor_name: Openvpn
+:summary: OpenVPN ARMhf image
 :status: draft
 
 Official Openvpn image

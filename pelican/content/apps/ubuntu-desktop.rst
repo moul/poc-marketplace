@@ -15,6 +15,7 @@ Ubuntu Desktop
 :help_url:
 :vendor_url:
 :vendor_name: Ubuntu
+:summary: Ubuntu Desktop ARMhf image
 :status: draft
 
 Official Ubuntu-Desktop image

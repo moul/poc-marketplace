@@ -5,7 +5,7 @@ Ubuntu Utopic
 :date: 2015-02-09 12:00
 :category: Distrib
 :tags: official, arm, distrib, ubuntu, upstart, aptitude
-:uuid:
+:uuid: 1a702a4e-3e19-4a73-b943-a5d5d7985c62
 :icon: https://cloud.online.net/images/image_logos/ubuntu.png
 :author: Online Labs
 :email: opensource@ocs.online.net

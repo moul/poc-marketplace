@@ -15,6 +15,7 @@ TimeMachine
 :help_url:
 :vendor_url:
 :vendor_name: TimeMachine
+:summary: TimeMachine ARMhf image
 :status: draft
 
 Official Timemachine image

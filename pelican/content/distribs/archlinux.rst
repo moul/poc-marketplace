@@ -5,7 +5,7 @@ Arch Linux
 :date: 2015-02-09 12:00
 :category: Distrib
 :tags: official, arm, distrib, archlinux, systemd, beta
-:uuid:
+:uuid: 631d33ec-6337-4a78-806a-64f826f17db0
 :author: Online Labs
 :email: opensource@ocs.online.net
 :icon: https://cloud.online.net/images/image_logos/archlinux.png

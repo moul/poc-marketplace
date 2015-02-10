@@ -5,7 +5,7 @@ Docker
 :date: 2015-02-09 12:00
 :category: App
 :tags: official, arm, app, ubuntu, upstart, aptitude, docker, virtualization, containers
-:uuid:
+:uuid: 5b9670b7-ae96-48e8-9542-fcd1ae758065
 :icon: https://cloud.online.net/images/image_logos/docker.png
 :author: Online Labs
 :email: opensource@ocs.online.net
@@ -15,7 +15,7 @@ Docker
 :help_url:
 :vendor_url:
 :vendor_name: Docker
-
+:summary: Docker ARMhf image
 
 Official Docker image
 

@@ -15,6 +15,7 @@ Seedbox
 :help_url:
 :vendor_url:
 :vendor_name: Seedbox
+:summary: Seedbox ARMhf image
 :status: draft
 
 Official Seedbox image

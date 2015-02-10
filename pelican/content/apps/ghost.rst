@@ -15,6 +15,7 @@ Ghost
 :help_url:
 :vendor_url:
 :vendor_name: Ghost
+:summary: Ghost ARMhf image
 :status: draft
 
 Official Ghost image

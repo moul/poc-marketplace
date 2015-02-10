@@ -5,7 +5,7 @@ Fedora
 :date: 2015-02-09 12:00
 :category: Distrib
 :tags: official, arm, distrib, fedora, systemd
-:uuid:
+:uuid: 91124073-ea74-46ef-ab4e-58c95369e4f4
 :icon: https://cloud.online.net/images/image_logos/fedora.png
 :author: Online Labs
 :email: opensource@ocs.online.net
