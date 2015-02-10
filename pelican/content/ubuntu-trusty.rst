@@ -3,7 +3,7 @@ Ubuntu Trusty
 
 :version: 14.04
 :date: 2015-02-09 12:00
-:category: Official
+:category: Distrib
 :tags: official, arm, distrib, ubuntu, upstart, aptitude
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/ubuntu.png

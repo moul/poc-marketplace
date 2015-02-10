@@ -3,7 +3,7 @@ Docker
 
 :version: 1.3.2
 :date: 2015-02-09 12:00
-:category: Official
+:category: App
 :tags: official, arm, app, ubuntu, upstart, aptitude, docker, virtualization, containers
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/docker.png

@@ -3,7 +3,7 @@ Arch Linux
 
 :version: Rolling
 :date: 2015-02-09 12:00
-:category: Official
+:category: Distrib
 :tags: official, arm, distrib, archlinux, systemd
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/archlinux.png

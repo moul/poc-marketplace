@@ -3,7 +3,7 @@ Pydio
 
 :version: latest
 :date: 2015-02-09 12:00
-:category: Official
+:category: App
 :tags: official, arm, app, ubuntu, upstart, aptitude, pydio, php, mysql, s3, storage, saas
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/pydio.png
