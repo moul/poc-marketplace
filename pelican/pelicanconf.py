@@ -41,7 +41,7 @@ RELATIVE_URLS = True
 PLUGIN_PATHS = [
     os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plugins')
 ]
-PLUGINS = ['gravatar']
+PLUGINS = ['gravatar', 'tipue_search']
 
 DEFAULT_METADATA = {
     'icon': 'https://cloud.online.net/images/69f046ad.image_default.jpg',
