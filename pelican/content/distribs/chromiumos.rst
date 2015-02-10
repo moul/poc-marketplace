@@ -16,6 +16,6 @@ Chromiumos
 :vendor_url:
 :vendor_name: Chromium
 :summary: ChromiumOS ARMhf image
-
+:status: draft
 
 Official ChromiumOS image

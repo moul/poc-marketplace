@@ -16,6 +16,6 @@ Android
 :vendor_url:
 :vendor_name: Android
 :summary: Android ARMhf image
-
+:status: draft
 
 Official Android image
