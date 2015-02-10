@@ -18,7 +18,7 @@
 
 {% block sidebar %}
 <div class="text-center well">
-  <img src="{% if article.icon %}{{ article.icon }}{% else %}https://cloud.online.net/images/69f046ad.image_default.jpg{% endif %}" class="img-rounded" />
+  <img src="{% if article.icon %}{{ article.icon }}{% else %}{{ DEFAULT_METADATA.icon }}{% endif %}" class="img-rounded" />
 
   <hr />
 

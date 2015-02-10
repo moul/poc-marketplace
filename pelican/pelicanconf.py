@@ -38,5 +38,16 @@ THEME = 'theme'
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-PLUGIN_PATHS = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plugins')]
+PLUGIN_PATHS = [
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plugins')
+]
 PLUGINS = ['gravatar']
+
+DEFAULT_METADATA = {
+    'icon': 'https://cloud.online.net/images/69f046ad.image_default.jpg',
+    'author': 'Online Labs',
+    'email': 'opensource@ocs.online.net',
+    'version': 'latest',
+    'date': '2015-01-01 23:42',
+    'category': 'Community',
+}
