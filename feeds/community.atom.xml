@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Marketplace</title><link href="//moul.github.io/poc-marketplace/" rel="alternate"></link><link href="//moul.github.io/poc-marketplace/feeds/community.atom.xml" rel="self"></link><id>//moul.github.io/poc-marketplace/</id><updated>2015-02-09T12:00:00+01:00</updated><entry><title>moul's Devbox</title><link href="//moul.github.io/poc-marketplace/mouls-devbox.html" rel="alternate"></link><updated>2015-02-09T12:00:00+01:00</updated><author><name>Manfred Touron</name></author><id>tag:moul.github.io,2015-02-09:poc-marketplace/mouls-devbox.html</id><summary type="html">&lt;p&gt;An image based on the official Docker image with some development tools&lt;/p&gt;
+&lt;div class="section" id="contains"&gt;
+&lt;h2&gt;Contains:&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Dependencies: build-essential&lt;/li&gt;
+&lt;li&gt;Version control: git&lt;/li&gt;
+&lt;li&gt;S3 client: s3cmd&lt;/li&gt;
+&lt;li&gt;Kernel dependencies: u-boot-tools, ncurses&lt;/li&gt;
+&lt;li&gt;Editor: emacs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</summary><category term="community"></category><category term="arm"></category><category term="ubuntu"></category><category term="upstart"></category><category term="aptitude"></category><category term="devbox"></category><category term="docker"></category><category term="s3"></category></entry></feed>
