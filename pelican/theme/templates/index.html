@@ -9,7 +9,7 @@
       <div class="thumbnail text-center">
         <a href="{{ SITEURL }}/{{article.url}}">
           <h3>{{article.title}}</h3>
-          <img src="{{article.icon}}" class="img-rounded" />
+          <img src="{% if article.icon %}{{ article.icon }}{% else %}https://cloud.online.net/images/69f046ad.image_default.jpg{% endif %}" class="img-rounded" />
         </a>
         <p>
           <a class="btn btn-info btn-sm" href="{{ SITEURL }}/{{ article.url }}">info…</a>
