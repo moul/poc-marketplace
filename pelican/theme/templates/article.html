@@ -30,7 +30,7 @@
         <dd><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a></dd>
 
         <dt>Tags</dt>
-        <dd>{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> {% endfor %}</dd>
+        <dd>{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-xs btn-info">{{ tag }}</a> {% endfor %}</dd>
 
         {% if article.vendor_url %}
         <dt>Vendor</dt>
