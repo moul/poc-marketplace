@@ -34,27 +34,27 @@
 
         {% if article.vendor_url %}
         <dt>Vendor</dt>
-        <dd><a href="{{article.vendor_url}}" target="_blank">{% if article.vendor_name %}{{article.vendor_name}}{% else %}{{article.vendor_url}}{% endif %}</a></dd>
+        <dd><a href="{{article.vendor_url}}" target="_blank" class="social">{% if article.vendor_name %}{{article.vendor_name}}{% else %}{{article.vendor_url}}{% endif %}</a></dd>
         {% endif %}
 
         {% if article.github_url %}
         <dt>Sources</dt>
-        <dd><a href="{{article.github_url}}" target="_blank">{{article.github_url}}</a></dd>
+        <dd><a href="{{article.github_url}}" target="_blank" class="social">View sources</a></dd>
         {% endif %}
 
         {% if article.issues_url %}
-        <dt>Report an issue</dt>
-        <dd><a href="{{article.issues_url}}" target="_blank">{{article.issues_url}}</a></dd>
+        <dt>Issues</dt>
+        <dd><a href="{{article.issues_url}}" target="_blank" class="social">Report an issue</a></dd>
         {% endif %}
 
         {% if article.help_url %}
         <dt>Documentation</dt>
-        <dd><a href="{{article.help_url}}" target="_blank">{{article.help_url}}</a></dd>
+        <dd><a href="{{article.help_url}}" target="_blank" class="social">Documentation</a></dd>
         {% endif %}
 
         {% if article.community_url %}
         <dt>Community discussion</dt>
-        <dd><a href="{{article.community_url}}" target="_blank">{% if article.community_title %}{{article.community_title}}{% else %}{{ article.title }}{% endif %}</a></dd>
+        <dd><a href="{{article.community_url}}" target="_blank" class="social">{% if article.community_title %}{{article.community_title}}{% else %}{{ article.title }}{% endif %}</a></dd>
         {% endif %}
       </dl>
 
