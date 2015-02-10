@@ -5,11 +5,12 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row-fluid">
+    <h2>{{ article.summary }}</h2>
     <div>{{ article.content }}</div>
   </div>
   <div class="row-fluid">
     <div class="well col-md-6 col-md-offset-3">
-      <a href="https://cloud.online.net/#/servers/new?image={{ article.uuid }}" class="btn btn-primary btn-block btn-lg" target="_blank">Create server</a>
+      <a href="https://cloud.online.net/#/servers/new?image={{ article.uuid }}" class="btn btn-primary btn-block btn-lg" target="_blank">Boot on Online Labs</a>
     </div>
   </div>
 </div>
