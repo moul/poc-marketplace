@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 import os.path
 
 AUTHOR = u'Online Labs'
-SITENAME = u'Marketplace'
+SITENAME = u'Online Labs Marketplace'
 SITEURL = ''
 
 PATH = 'content'
