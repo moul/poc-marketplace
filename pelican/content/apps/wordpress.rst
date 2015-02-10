@@ -7,7 +7,8 @@ Wordpress
 :tags: official, arm, app, ubuntu, upstart, aptitude, wordpress, php, mysql, blog, saas
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/wordpress.png
-:author: Online Labs <opensource@ocs.online.net>
+:author: Online Labs
+:email: opensource@ocs.online.net
 :github_url: https://github.com/online-labs/image-app-wordpress
 :issues_url: https://github.com/online-labs/image-app-wordpress/issues
 :community_url:

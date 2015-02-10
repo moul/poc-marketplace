@@ -7,7 +7,8 @@ Fedora
 :tags: official, arm, distrib, fedora, systemd
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/fedora.png
-:author: Online Labs <opensource@ocs.online.net>
+:author: Online Labs
+:email: opensource@ocs.online.net
 :github_url: https://github.com/online-labs/image-fedora
 :issues_url: https://github.com/online-labs/image-fedora/issues
 :community_url:

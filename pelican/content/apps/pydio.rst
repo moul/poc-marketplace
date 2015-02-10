@@ -7,7 +7,8 @@ Pydio
 :tags: official, arm, app, ubuntu, upstart, aptitude, pydio, php, mysql, s3, storage, saas
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/pydio.png
-:author: Online Labs <opensource@ocs.online.net>
+:author: Online Labs
+:email: opensource@ocs.online.net
 :github_url: https://github.com/online-labs/image-app-pydio
 :issues_url: https://github.com/online-labs/image-app-pydio/issues
 :community_url:

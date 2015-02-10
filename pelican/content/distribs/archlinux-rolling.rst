@@ -6,8 +6,9 @@ Arch Linux
 :category: Distrib
 :tags: official, arm, distrib, archlinux, systemd
 :uuid:
+:author: Online Labs
+:email: opensource@ocs.online.net
 :icon: https://cloud.online.net/images/image_logos/archlinux.png
-:author: Online Labs <opensource@ocs.online.net>
 :github_url: https://github.com/online-labs/image-archlinux
 :issues_url: https://github.com/online-labs/image-archlinux/issues
 :community_url:

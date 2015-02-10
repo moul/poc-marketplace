@@ -7,7 +7,8 @@ moul's Devbox
 :tags: community, arm, ubuntu, upstart, aptitude, devbox, docker, s3
 :uuid:
 :icon:
-:author: Manfred Touron <m@42.am>
+:author: Manfred Touron
+:email: m@42.am
 :github_url: https://github.com/moul/ocs-image-devbox
 :issues_url: https://github.com/moul/ocs-image-devbox/issues
 :community_url:

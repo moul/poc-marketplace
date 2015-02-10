@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os.path
+
 AUTHOR = u'Online Labs'
 SITENAME = u'Marketplace'
 SITEURL = ''
@@ -35,3 +37,6 @@ THEME = 'theme'
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
+
+PLUGIN_PATHS = [os.path.join(os.path.dirname(os.path.abspath(__file__)), 'plugins')]
+PLUGINS = ['gravatar']

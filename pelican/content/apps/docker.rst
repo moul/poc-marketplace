@@ -7,7 +7,8 @@ Docker
 :tags: official, arm, app, ubuntu, upstart, aptitude, docker, virtualization, containers
 :uuid:
 :icon: https://cloud.online.net/images/image_logos/docker.png
-:author: Online Labs <opensource@ocs.online.net>
+:author: Online Labs
+:email: opensource@ocs.online.net
 :github_url: https://github.com/online-labs/image-app-docker
 :issues_url: https://github.com/online-labs/image-app-docker/issues
 :community_url:
