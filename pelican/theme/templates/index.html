@@ -4,7 +4,7 @@
 {% if articles %}
 <div class="container-fluid">
   <div class="row-fluid">
-    {% for article in articles %}
+    {% for article in articles_page.object_list %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
       <div class="thumbnail text-center">
         <a href="{{ SITEURL }}/{{article.url}}">
