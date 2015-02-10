@@ -74,8 +74,8 @@
           {% block sidebar %}
           <div class="well text-center">
             <p>Tags</p>
-            {% for tag, articles in tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-info btn-xs">{{ tag }}</a>
+            {% for _tag, articles in tags %}
+            <a href="{{ SITEURL }}/{{ _tag.url }}" class="btn btn-xs {% if tag == _tag %}btn-primary{% else %}btn-info{% endif %}">{{ _tag }}</a>
             {% endfor %}
           </div>
           {% endblock %}
